@@ -3,7 +3,13 @@ import { createWebHashHistory, createRouter } from "vue-router";
 export const constantRoutes = [
     {
         path: "/test",
+        name: 'test',
         component: () => import("@/views/test.vue"),
+    },
+    {
+        path: '/',
+        name: 'index',
+        component: () => import("@/views/index.vue"),
     }
 ];
 
