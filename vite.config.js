@@ -31,7 +31,8 @@ export default defineConfig({
         proxy: {
             // https://cn.vitejs.dev/config/#server-proxy
             "/dev-api": {
-                target: "https://link-api.mzb0.com/mapi",
+                // target: "https://link-api.mzb0.com/mapi",
+                target: "http://localhost:8080/mapi",
                 changeOrigin: true,
                 rewrite: p => p.replace(/^\/dev-api/, "")
             }
